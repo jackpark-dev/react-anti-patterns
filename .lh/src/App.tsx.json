@@ -1,0 +1,42 @@
+{
+    "sourceFile": "src/App.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1646772711878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1646772727379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import { Navbar } from \"./shared/component/Navbar\";\n+import Navbar } from \"./shared/component/Navbar\";\n import React, { useState } from \"react\";\n import \"./App.css\";\n \n function App() {\n"
+                },
+                {
+                    "date": 1646773649672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import Navbar } from \"./shared/component/Navbar\";\n+import Navbar from \"./shared/component/Navbar\";\n import React, { useState } from \"react\";\n import \"./App.css\";\n \n function App() {\n@@ -14,8 +14,10 @@\n           <h2>Title</h2>\n           <p>Body</p>\n         </div>\n       </article>\n+\n+      \n     </main>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1646773657259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n           <p>Body</p>\n         </div>\n       </article>\n \n-      \n+      <Page />\n     </main>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1646773663320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n-import Navbar from \"./shared/component/Navbar\";\n import React, { useState } from \"react\";\n import \"./App.css\";\n+import Page from \"./Page\";\n+import Navbar from \"./shared/component/Navbar\";\n \n function App() {\n   const [count] = useState<number>(0);\n \n"
+                },
+                {
+                    "date": 1646773671342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n           <h2>Title</h2>\n           <p>Body</p>\n         </div>\n       </article>\n-      \n+      {/*  */}\n       <Page />\n     </main>\n   );\n }\n"
+                },
+                {
+                    "date": 1646775651419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n       {/** Page */}\n       <Page />\n \n       <div>\n-        \n+        <\n       </div>\n     </main>\n   );\n }\n"
+                }
+            ],
+            "date": 1646772711878,
+            "name": "Commit-0",
+            "content": "import { Navbar } from \"./shared/component/Navbar\";\nimport React, { useState } from \"react\";\nimport \"./App.css\";\n\nfunction App() {\n  const [count] = useState<number>(0);\n\n  return (\n    <main>\n      <Navbar count={count} />\n      <article>\n        <h1>Home</h1>\n        <div className=\"card\">\n          <h2>Title</h2>\n          <p>Body</p>\n        </div>\n      </article>\n    </main>\n  );\n}\n\nexport default App;\n"
+        }
+    ]
+}
